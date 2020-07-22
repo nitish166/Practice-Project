@@ -1,0 +1,23 @@
+
+.containter img{
+    display: block;
+    margin-left: 30%;
+    margin-right: auto;
+    margin-top: 15%;
+    border-radius: 50%;
+    
+}
+
+.containter p{
+    margin-left: 50%;
+}
+
+/* color  */
+body{
+    background-color: gray;
+}
+
+/* paragraph  */
+p{
+    margin-bottom: 1.5em;
+}
