@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Details</title>
+    <style>
+        div#maincontent {
+            height: 200px;
+            width: 600px;
+            border: 1px solid #CEE2FA;
+            text-align: left;
+            color: #08438E;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+        }
+        div#heading {
+            text-decoration: bold;
+            text-align: center;
+            margin-top: 80px;
+            width: 600px;
+            border: 1px solid #CEE2FA;
+            text-align: center;
+            color: #08438E;
+            background-color: #CEE2FA;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+        }
+        h4 {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div id="heading">
+            <b>Theatre Drama</b>
+        </div>
+        <div id="maincontent">
+            <h4>Your Ticket Details:</h4>
+            <br>
+            <script>
+                // Write the code to display the total price and discounted price of tickets
+                var ticket = prompt("Enter the number of tickets");
+                var price = 250;
+                var fprice = price*ticket;
+                var dis1 = price - price*0.05;
+                var dis2 = price - price*0.07;
+                var dis3 = price - price*0.09;
+                var dis4 = price - price*0.11; 
+                var fdis = dis1+dis2+dis3+dis4;
+
+                for(var i=0; i<ticket; i++)
+                {
+                    if(ticket<=2)
+                    {
+                        console.log("Price is same");   
+                        break;
+                    }
+                    else if(ticket>=5)
+                    {
+                        console.log("Booking is not allowed");
+                        break;
+                    }
+                    else
+                    {
+                        document.write("Ticket for Customer 1 gets 5% discount!, Cost is: Rs. "+dis1+"<br>");
+                        document.write("Ticket for Customer 2 gets 7% discount!, Cost is: Rs. "+dis2+"<br>");
+                        document.write("Ticket for Customer 3 gets 9% discount!, Cost is: Rs. "+dis3+"<br>");
+                        document.write("Ticket for Customer 4 gets 11% discount!, Cost is: Rs. "+dis4+"<br>");
+                        document.write("For "+ticket+" tickets, you need to pay: Rs. "+fdis+" instead of Rs."+fprice);
+                        break;
+                    }
+                }
+            </script>
+        </div>
+    </center>
+</body>
+</html>
