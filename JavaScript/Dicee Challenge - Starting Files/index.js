@@ -23,5 +23,7 @@ else{
     document.querySelector("h1").innerHTML = "<em>Draw!</em>"
 }
 
+
+
 // test in the console of randomnumbers
 console.log(randamNumber1);
