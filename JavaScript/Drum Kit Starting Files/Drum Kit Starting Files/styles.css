@@ -17,31 +17,45 @@ footer {
 }
 
 .w {
-
+  background-image: url("images/tom1.png");
+  cursor: pointer;
+  border: none;
 }
 
-.a {
-
+.a{
+  background-image: url("images/tom2.png");
+  cursor: pointer;
+  border: none;
 }
 
 .s {
-
+  background-image: url("images/tom3.png");
+  cursor: pointer;
+  border: none;
 }
 
 .d {
-
+  background-image: url("images/tom4.png");
+  cursor: pointer;
+  border: none;
 }
 
 .j {
-
+ background-image: url("images/crash.png");
+ cursor: pointer;
+ border: none;
 }
 
 .k {
-
+background-image: url("images/kick.png");
+cursor: pointer;
+border: none;
 }
 
 .l {
-
+background-image: url("images/snare.png");
+cursor: pointer;
+border: none;
 }
 
 .set {
