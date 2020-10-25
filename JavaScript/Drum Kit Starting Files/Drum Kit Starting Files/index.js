@@ -2,6 +2,7 @@
 // Adding event listeners to a button
 var numberOfDrumButton = document.querySelectorAll(".drum").length;
 
+// Detecting button sound
 for(var i=0; i<numberOfDrumButton; i++)
 {
 
@@ -9,7 +10,19 @@ for(var i=0; i<numberOfDrumButton; i++)
 
 
         var buttonInnerHTML = this.innerHTML;
-        switch(buttonInnerHTML)
+        makeSound(buttonInnerHTML);
+        
+    });
+}
+
+// Detecting keypress sound
+document.addEventListener("keypress", function(event){
+    makeSound(event.key);
+});
+
+function makeSound(key)
+{
+        switch(key)
         {
             case 'w':
                 var tom1 = new Audio('sounds/tom-1.mp3');
@@ -43,9 +56,6 @@ for(var i=0; i<numberOfDrumButton; i++)
                 console.log(buttonInnerHTML);
         }
         
-    });
 }
-
-
 
 
