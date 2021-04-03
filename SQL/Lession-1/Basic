@@ -1,0 +1,21 @@
+SELECT and FORM :
+
+1. Select: it indicates which column(s) you want to given the data for.
+2. From : Specifies from which table(s) you want to select the colums.
+notice the columns need to exist in this table
+
+Note: if you want to be provided with the data from all columns in the table, you use "*", like so:
+
+Eg: select * from orders;
+
+Note that using select does not create a new table with these column in database, its just provide the data to you as the result, or output, of this command.
+
+You will use the sql select statement in every query in this course, but you will be learning a few additional statements and operators that can be used along with them to ask more advanced question for your data.
+
+*********************************************************************
+
+If you see an error message after executing your query, no problem! Programmers get error all the time! Mistakes are opportunities to learn. :)
+
+********************************************************************
+
+
